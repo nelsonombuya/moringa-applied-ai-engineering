@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["Afya", "dotenv", "Juma", "linalg", "OPENAI", "openrouter"]
+  "cSpell.words": ["Afya", "dotenv", "Juma", "linalg", "OPENAI", "openrouter"],
+  "postman.settings.dotenv-detection-notification-visibility": false
 }
