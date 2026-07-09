@@ -11,8 +11,8 @@ from sys import argv, stderr
 from time import perf_counter
 from typing import Any, Literal
 
-import httpx
 from dotenv import load_dotenv
+from httpx import HTTPStatusError, TimeoutException
 from openai import APIError, APITimeoutError, AsyncOpenAI, OpenAI
 
 load_dotenv()
@@ -527,8 +527,8 @@ def run_triage(
         APITimeoutError,
         JSONDecodeError,
         TriageEngineError,
-        httpx.HTTPStatusError,
-        httpx.TimeoutException,
+        HTTPStatusError,
+        TimeoutException,
     ) as e:
         print(f"Cloud pathway failed: {e}. Falling back to local Ollama.", file=stderr)
 
