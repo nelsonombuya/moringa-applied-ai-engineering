@@ -1,0 +1,28 @@
+from openai import OpenAI
+
+# Connect to local Ollama instance (no API key needed)
+client = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")
+
+messages = [
+    {
+        "role": "system",
+        "content": (
+            "You are a helpful health assistant for AfyaPlus Health. "
+            "Provide general health guidance. Never diagnose conditions "
+            "or prescribe medication."
+        ),
+    },
+    {
+        "role": "user",
+        "content": "I have been having headaches for three days. Should I be worried?",
+    },
+]
+
+response = client.chat.completions.create(
+    messages=messages,  # type: ignore
+    model="llama3.2",
+    temperature=0.3,
+)
+
+print("--- Local Model Response ---")
+print(response.choices[0].message.content)
