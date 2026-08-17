@@ -30,7 +30,7 @@ try:
         model="gpt-4o-mini",
         messages=messages,  # type: ignore
         temperature=0.3,
-        max_tokens=300,
+        max_tokens=300,  # type: ignore
     )
 
     usage = response.usage
