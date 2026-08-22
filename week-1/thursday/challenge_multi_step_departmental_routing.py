@@ -10,15 +10,15 @@ load_dotenv()
 llm_router = ChatOpenAI(
     temperature=0.0,
     model="openai/gpt-4o-mini",
-    max_tokens=5,  # type:ignore
+    max_tokens=5,  # type: ignore
     base_url="https://openrouter.ai/api/v1",
-    api_key=os.environ["OPENROUTER_API_KEY"],  # type:ignore
+    api_key=os.environ["OPENROUTER_API_KEY"],  # type: ignore
 )
 llm_chain = ChatOpenAI(
     temperature=0.2,
     model="openai/gpt-4o-mini",
     base_url="https://openrouter.ai/api/v1",
-    api_key=os.environ["OPENROUTER_API_KEY"],  # type:ignore
+    api_key=os.environ["OPENROUTER_API_KEY"],  # type: ignore
 )
 # --- TASK 1: DEFINE YOUR COMPONENTS ---
 # TODO: Define your classification routing prompt template
@@ -59,8 +59,9 @@ print(f"Incoming Payload: {incoming_patient_sms}\n")
 detected_route = router_chain.invoke({"message": incoming_patient_sms})
 print(f"--- Route Evaluated: {detected_route} ---")
 
-# TODO: Step B - Execute the corresponding multi-step chain execution paths based on the route
-# Clean the string, run step 1, pass the result to step 2, and print the final Swahili output
+# X TODO: Step B - Execute the corresponding multi-step chain execution paths based on the
+# route. Clean the string, run step 1, pass the result to step 2, and print the final
+# Swahili output
 if detected_route == "CLINICAL":
     step1_output = clinical_chain.invoke({"message": incoming_patient_sms})
     step2_output = translation_chain.invoke({"text": step1_output})
