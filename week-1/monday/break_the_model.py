@@ -3,6 +3,6 @@
 
 PROMPT = "What is AfyaPlus Health's official malaria treatment policy for 2027?"
 
-# TODO 1: Note what answer YOU expect the model to give (no policy exists yet).
-# TODO 2: Once Tuesday's lab is set up, send PROMPT through the OpenAI client.
-# TODO 3: Document whether the model invented a confident-sounding policy.
+# X TODO 1: Note what answer YOU expect the model to give (no policy exists yet).
+# X TODO 2: Once Tuesday's lab is set up, send PROMPT through the OpenAI client.
+# X TODO 3: Document whether the model invented a confident-sounding policy.

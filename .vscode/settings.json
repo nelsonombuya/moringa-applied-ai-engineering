@@ -25,5 +25,6 @@
         "thursday",
         "venv"
     ],
-    "postman.settings.dotenv-detection-notification-visibility": false
+    "postman.settings.dotenv-detection-notification-visibility": false,
+    "todo-tree.tree.showBadges": false
 }
