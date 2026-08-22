@@ -9,8 +9,8 @@ from langchain_openai import ChatOpenAI
 # Instantiate the reasoning brain
 load_dotenv()
 llm = ChatOpenAI(
-    model="openai/gpt-4o-mini",
     temperature=0.0,  # Fixed bug by setting the temperature to 0.0 for deterministic classification
+    model="openai/gpt-4o-mini",
     max_tokens=5,  # type:ignore
     api_key=environ.get("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
