@@ -4,7 +4,6 @@ from os import environ
 
 from dotenv import load_dotenv
 from langchain.agents import create_agent
-from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.tools import tool
 from langchain_openai import ChatOpenAI
 
