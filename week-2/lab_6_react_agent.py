@@ -1,13 +1,11 @@
 # lab6_react_agent.py
-import os
+from os import environ
 
 from dotenv import load_dotenv
 from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.tools import tool
 from langchain_openai import ChatOpenAI
-
-load_dotenv()
 
 
 @tool
@@ -21,7 +19,7 @@ load_dotenv()
 llm = ChatOpenAI(
     model="openai/gpt-4o-mini",
     temperature=0.0,
-    api_key=os.environ.get("OPENROUTER_API_KEY"),  # type:ignore
+    api_key=environ.get("OPENROUTER_API_KEY"),  # type:ignore
     base_url="https://openrouter.ai/api/v1",
 )
 prompt = ChatPromptTemplate.from_messages(
