@@ -1,0 +1,55 @@
+AFYAPLUS HEALTH APP — SYNTHETIC OPERATIONAL GUIDELINES
+Version: 1.0 | Effective date: 2025-01-15
+
+Purpose
+Provide consistent, safe, and privacy-conscious guidance for routine hospital and health-app operations. This document is synthetic training data and must not be used as clinical advice or as a substitute for approved hospital policy.
+
+Service hours and response targets
+- Emergency support: 24 hours a day, 7 days a week. If a user reports severe symptoms or immediate danger, advise them to contact local emergency services or go to the nearest emergency department.
+- Nurse triage queue: 07:00–19:00 daily. Target first response: within 30 minutes.
+- Routine appointment requests: confirmation within 1 business day.
+- Prescription refill requests: review within 2 business days; controlled medicines require clinician review.
+- Technical support: Monday–Friday, 08:00–17:00. Target first response: within 4 business hours.
+
+Appointment operations
+- Verify patient identity using at least two approved identifiers before discussing protected health information.
+- Confirm appointment type, clinician, location or telehealth link, date, time zone, and preparation instructions.
+- Patients may cancel or reschedule through the app up to 24 hours before the appointment where permitted by local policy.
+- Mark a patient as a no-show only after the configured grace period has elapsed and contact attempts are documented.
+- Do not diagnose, prescribe, or change treatment through automated chat.
+
+Patient communications
+- Use clear, respectful, nonjudgmental language and confirm understanding when instructions are important.
+- Share only the minimum necessary information. Do not display full medical details in push notifications.
+- Never request passwords, one-time authentication codes, or complete payment-card numbers in chat.
+- Route complaints, safeguarding concerns, suspected abuse, and service incidents to the designated human team.
+
+Escalation rules
+- Immediate escalation: chest pain, severe breathing difficulty, stroke symptoms, uncontrolled bleeding, loss of consciousness, imminent self-harm risk, or other life-threatening symptoms.
+- Urgent clinical review: rapidly worsening symptoms, high-risk pregnancy concerns, serious medication reactions, or significant abnormal results flagged by a clinician.
+- Privacy or security incident: stop sharing data, preserve the relevant record, and notify the privacy/security team according to incident procedure.
+- When uncertain, acknowledge the limitation and route the case to a qualified human professional.
+
+Data quality and records
+- Record the date, time, source, action taken, responsible team, and follow-up status for operational events.
+- Use standardized statuses: New, In review, Awaiting patient, Escalated, Resolved, and Closed.
+- Correct errors using an auditable amendment; do not delete or overwrite clinical records without authorization.
+- Retain and disclose information according to applicable law, consent settings, and organizational retention policy.
+
+Synthetic sample daily metrics
+- Appointments scheduled: 184
+- Appointments completed: 151
+- Cancellations: 17
+- No-shows: 16
+- Nurse triage requests received: 62
+- Median triage response time: 22 minutes
+- Prescription refill requests received: 48
+- Refill requests awaiting clinician review: 9
+- Technical support tickets opened: 31
+- Open privacy/security incidents: 0
+
+Quality checks
+- Review unresolved escalations at the start and end of each shift.
+- Reconcile appointment, triage, and refill queues daily.
+- Investigate response-time breaches and document corrective actions.
+- Supervisors should review a sample of automated interactions weekly for safety, accuracy, privacy, and appropriate escalation.

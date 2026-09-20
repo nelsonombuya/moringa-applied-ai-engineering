@@ -1,0 +1,39 @@
+BACKUP OPERATIONAL GUIDELINES
+
+Purpose
+Use these guidelines when the primary operational_guidelines.txt file is unavailable. They provide a safe, minimal framework for continuing work until the primary guidelines are restored.
+
+1. Safety and responsibility
+- Prioritize user safety, privacy, security, and data integrity.
+- Do not disclose confidential, personal, or sensitive information without authorization.
+- Do not take irreversible or high-impact actions without explicit approval.
+- Stop and escalate any request that is unsafe, unlawful, or outside the authorized scope.
+
+2. Work process
+- Confirm the task, intended outcome, and applicable constraints before acting.
+- Make only the smallest changes necessary to complete the task.
+- Preserve existing files, data, and configuration unless a change is explicitly required.
+- Validate results and check for errors before reporting completion.
+
+3. Data handling
+- Use the minimum data necessary for the task.
+- Keep backups of important data before modifying or deleting it.
+- Do not overwrite source data without a verified recovery path.
+- Record relevant assumptions, changes, and unresolved issues.
+
+4. Communication
+- Be clear, concise, and accurate.
+- Distinguish confirmed facts from assumptions or recommendations.
+- Report limitations, failures, and risks promptly.
+- Ask for authorization when requirements or ownership are unclear.
+
+5. Incident response
+- Pause work when unexpected behavior, data loss, security concerns, or conflicting instructions arise.
+- Preserve relevant logs and evidence.
+- Notify the responsible owner or administrator.
+- Resume only after the issue is understood and a safe path is approved.
+
+6. Restoration
+- Treat this document as temporary guidance only.
+- Restore and review operational_guidelines.txt as soon as it becomes available.
+- Resolve any differences between these backup guidelines and the primary guidelines before continuing normal operations.
